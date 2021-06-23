@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.GreenHome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicons"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YourHome">
+        <activity android:name="com.example.GreenHome.AllActivity.ImageDetail" />
+        <activity android:name="com.example.GreenHome.AllActivity.PostDetail" />
+        <activity android:name="com.example.GreenHome.AllActivity.FindHome" />
+        <activity android:name="com.example.GreenHome.BookingFunction.ConfirmBooking" />
+        <activity android:name="com.example.GreenHome.BookingFunction.Booking" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc" />
+
+        <activity android:name="com.example.GreenHome.AllActivity.InformationHouse" />
+        <activity
+            android:name="com.example.GreenHome.AllActivity.Chat"
+            android:theme="@style/AppThemNo" />
+        <activity android:name="com.example.GreenHome.AllActivity.ThereProfile" />
+        <activity
+            android:name="com.example.GreenHome.AllActivity.PublishPost"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.example.GreenHome.LoginAndRegister.InforUser" />
+        <activity android:name="com.example.GreenHome.LoginAndRegister.Login_Register" />
+        <activity android:name="com.example.GreenHome.AllActivity.Hello">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.GreenHome.AllActivity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

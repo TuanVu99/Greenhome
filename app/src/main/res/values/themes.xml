@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.YourHome" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">@color/background</item>
+        <item name="colorOnPrimary">#EAEAEA</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/background</item>
+        <item name="colorSecondaryVariant">@color/background</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppThemNo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/background</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/background</item>
+    </style>
+    <style name="AppThemNo1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#a51e22</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorPrimaryDark">#a51e22</item>
+        <item name="colorAccent">#a51e22</item>
+    </style>
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="LabelStype">
+        <item name="android:background">@drawable/bg_label</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

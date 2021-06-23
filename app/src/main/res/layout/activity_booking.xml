@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".BookingFunction.Booking">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolb"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="@dimen/_5sdp"
+        app:layout_collapseMode="pin">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/border7"
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:onClick="previousMonthAction"
+                    android:text="@string/pre"
+                    android:textColor="@color/blue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monthYearTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Feb 2021"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:onClick="nextMonthAction"
+                    android:text="@string/after"
+                    android:textColor="@color/blue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CN"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="T2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="T3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="T4"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="T5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="T6"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="T7"
+                    android:textAlignment="center"
+                    android:textColor="@color/black1"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp"
+                    android:background="@drawable/brgforcalendarr"
+                    android:elevation="@dimen/_2sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/calendarRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_250sdp"
+                        android:background="#C3FFFFFF" />
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:gravity="center_vertical"
+                                android:text="@string/Adults"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:background="@drawable/border6"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/num_d_Adults"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+                                <EditText
+                                    android:id="@+id/num_count_Adults"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/border6"
+                                    android:enabled="false"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black1" />
+
+                                <ImageButton
+                                    android:id="@+id/num_u_Adults"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:src="@drawable/add" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:gravity="center_vertical"
+                                android:text="@string/children"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:background="@drawable/border6"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/num_d_children"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+                                <EditText
+                                    android:id="@+id/num_count_children"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/border6"
+                                    android:enabled="false"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black1" />
+
+                                <ImageButton
+                                    android:id="@+id/num_u_children"
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:src="@drawable/add" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:elevation="@dimen/_2sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_checkinfor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_45sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/border_4"
+                        android:text="@string/booking"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

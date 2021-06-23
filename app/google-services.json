@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "424617863523",
+    "project_id": "homestayaz-153fd",
+    "storage_bucket": "homestayaz-153fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424617863523:android:58f1dc88ff6a95cb480b56",
+        "android_client_info": {
+          "package_name": "com.example.GreenHome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424617863523-qamme44ooi4gt7khqss755rgsd6tvt62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq3DhacaWuFVm6Au97Hz0TF-IIzOt1BN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424617863523-qamme44ooi4gt7khqss755rgsd6tvt62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424617863523:android:ef4a3a2f5e64c57a480b56",
+        "android_client_info": {
+          "package_name": "com.example.GreenHome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424617863523-qamme44ooi4gt7khqss755rgsd6tvt62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq3DhacaWuFVm6Au97Hz0TF-IIzOt1BN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424617863523-qamme44ooi4gt7khqss755rgsd6tvt62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

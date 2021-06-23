@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7FFFFFF"
+    android:orientation="vertical"
+    tools:context=".AllFragment.Messenger">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="#B7FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#00FFFFFF"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mes_rcl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_layout_lc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+
+            <include layout="@layout/row_shimmer_user" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</LinearLayout>
